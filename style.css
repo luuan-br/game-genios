@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    scroll-behavior: smooth;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #111;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 5px;
+    row-gap: 5px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.start {
+    cursor: pointer;
+    width: 35vw;
+    height: 35vw;
+    max-width: 200px;
+    max-height: 200px;
+    background-color: #111;
+    transition: all .3s ease;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+    font-size: 1.125em;
+}
+
+.button {
+    cursor: pointer;
+    width: 40vw;
+    height: 40vw;
+    max-width: 200px;
+    max-height: 200px;
+    background-color: transparent;
+    box-shadow: 0 0 10px transparent,
+                0 0 20px transparent,
+                0 0 40px transparent,
+                0 0 60px transparent,
+                0 0 80px transparent,
+                0 0 100px transparent;
+    transition: all .3s ease;    
+}
+
+.button:nth-of-type(1) {
+    border-top-left-radius: 100%;
+    background-image: linear-gradient(to left top, #08a2c2, #0090db, #0079f3, #0059fc, #1b12eb);
+}
+
+.button:nth-of-type(2) {
+    border-top-right-radius: 100%;
+    background-image: linear-gradient(to left bottom, #08c220, #30cc1e, #48d71b, #5be117, #6eeb12);
+}
+
+.button:nth-of-type(3) {
+    border-bottom-left-radius: 100%;
+    background-image: linear-gradient(to left bottom, #fffb00, #eff701, #e0f304, #d0ef0b, #c1eb12);
+}
+
+.button:nth-of-type(4) {
+    border-bottom-right-radius: 100%;
+    background-image: linear-gradient(to right bottom, #ff0000, #ff0023, #fd0038, #f9004a, #f3065a);
+}
+
+.button:nth-of-type(1).active {
+    box-shadow: 0 0 10px royalblue,
+                0 0 20px royalblue,
+                0 0 40px royalblue,
+                0 0 60px royalblue,
+                0 0 80px royalblue,
+                0 0 100px royalblue;
+}
+.button:nth-of-type(2).active {
+    box-shadow: 0 0 10px green,
+                0 0 20px green,
+                0 0 40px green,
+                0 0 60px green,
+                0 0 80px green,
+                0 0 100px green;
+}
+.button:nth-of-type(3).active {
+    box-shadow: 0 0 10px yellow,
+                0 0 20px yellow,
+                0 0 40px yellow,
+                0 0 60px yellow,
+                0 0 80px yellow,
+                0 0 100px yellow;
+}
+.button:nth-of-type(4).active {
+    box-shadow: 0 0 10px red,
+                0 0 20px red,
+                0 0 40px red,
+                0 0 60px red,
+                0 0 80px red,
+                0 0 100px red;
+}
